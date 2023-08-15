@@ -13,12 +13,12 @@ const Table = ({ sat }) => {
         </tr>
         </thead>
         <tbody>
-        { sat.map( data => ( 
-        <tr>
-
-          ))}
-        <tr>
-          <td>Row Data TBD</td>
+        {sat.map(data => ( 
+        <tr key={data.id}>
+          <td>{data.name}Row Data TBD</td>
+            <td>{ data.type}Row Data TBD</td>
+            <td>{data.launchDate}Row Data TBD</td>
+            <td>{data.operational ? "Active" : "Inactive"}Row Data TBD</td>
         </tr>
         ))}
         </tbody>
