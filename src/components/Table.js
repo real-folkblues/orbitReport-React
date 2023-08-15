@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Table = ({ sat }) => {
+const Table = ({sat}) => {
   return (
       <table>
        <thead>
@@ -9,16 +9,16 @@ const Table = ({ sat }) => {
           <th>Name</th>
           <th>Type of Satellite</th>
           <th>Launch Date</th>
-          <th>Header TBD</th>
+          <th>Status</th>
         </tr>
         </thead>
         <tbody>
-        {sat.map(data => ( 
+        {sat.map(data => (
         <tr key={data.id}>
-          <td>{data.name}Row Data TBD</td>
-            <td>{ data.type}Row Data TBD</td>
-            <td>{data.launchDate}Row Data TBD</td>
-            <td>{data.operational ? "Active" : "Inactive"}Row Data TBD</td>
+          <td>{data.name}</td>
+            <td>{data.type}</td>
+            <td>{data.launchDate}</td>
+            <td>{data.operational ? "Active" : "Inactive"}</td>
         </tr>
         ))}
         </tbody>
