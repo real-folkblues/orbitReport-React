@@ -1,8 +1,11 @@
+import React from 'react';
+
 function Banner(){
-    return (<header>
-        Orbit Report
+    return (
+        <div>
+            <h1>BANNER</h1>
         <p>Test Instructions for Orbit Report</p>
-        </header>
+        </div>
     );
 };
 
